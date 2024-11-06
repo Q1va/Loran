@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LORAN Benyk</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            margin: 0;  /* отступы */
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;  /* Высота 100% окна */
+            background-color: #121212;  /* Тёмный фон */
+            justify-content: space-between;
+        }
+
+        canvas {
+            flex-grow: 1;  /* Растягиваем канвас */
+            background-color: #1e1e1e;  /* Тёмный фон для канваса */
+        }
+
+        #controls {
+            display: flex;
+            justify-content: center; /* Центрируем  по горизонтали */
+            align-items: center;     /* Центрируем  по вертикали */
+            flex-direction: column;
+            padding: 10px;
+            background-color: #222;  /* Темный фон для панели управления */
+        }
+
+        input, button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        input:focus, button:hover {
+            background-color: #444;
+        }
+
+        button {
+            background-color: red;  /* Красный фон для кнопки */
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 200px;  /* Ширина кнопки */
+        }
+
+        #speed-response {
+            color: white;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 200px;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="loranChart"></canvas>
+    <div id="controls">
+        <input id="speed-input" type="number" placeholder="Введите скорость (км/ч)">
+        <button id="submit-speed">Изменить скорость</button>
+        <div id="speed-response" style="margin-left: 10px"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
