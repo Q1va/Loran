@@ -12,6 +12,6 @@
 ![Screenshot_3](https://github.com/user-attachments/assets/dac1dd5e-3b87-484e-af2b-7a941ced04ab)
 
 
-### Статус после обновления
+### Статус после обновления  скрости
 ![Screenshot_4](https://github.com/user-attachments/assets/777d2434-43c2-4554-8477-ba0e15dbda78)
 
